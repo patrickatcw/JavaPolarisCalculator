@@ -31,6 +31,26 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println();
+
+        Operations.Add();
+
+        System.out.println("----------------------------------");
+
+        Operations.Subtract();
+
+        System.out.println("----------------------------------");
+
+        Operations.Multiply();
+
+        System.out.println("----------------------------------");
+
+        Operations.Divide();
+
+        System.out.println();
+
+        System.out.println("GOOD JOB RAMROD!!!");
+
     }
 
 }
