@@ -1,5 +1,7 @@
 package com.me;
 
+import java.util.Scanner;
+
 //make simple calculator that shows both user input and
 //result
 //one class, operations? maybe
@@ -31,6 +33,15 @@ public class Main {
 
     public static void main(String[] args) {
 
+        double term1 = 0;
+        double term2 = 0;
+        double results = 0;
+        System.out.println();
+        PromptUser(term1, term2);
+
+        results = Operations.AddC(term1, term2);
+        System.out.println(results);
+
         System.out.println();
 
         Operations.Add();
@@ -53,4 +64,15 @@ public class Main {
 
     }
 
-}
+        public static void PromptUser(Object term1, double term2){
+
+            System.out.println("Enter two integers to calculate their sum; ");
+            Scanner in = new Scanner(System.in);
+            term1 = in.nextDouble();
+            term2 = in.nextDouble();
+
+        }
+
+    }
+
+

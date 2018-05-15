@@ -16,6 +16,26 @@ public class Operations {
 
     }
 
+    public static double AddC(double term1, double term2){
+
+        return term1 + term2;
+    }
+
+    public static double SubtractC(double term1, double term2){
+
+        return term1 - term2;
+    }
+
+    public static double MultiplyC(double term1, double term2){
+
+        return term1 * term2;
+    }
+
+    public static Object DivideC(double term1, double term2){
+            if (term2 == 0) return "Cannot divide by 0!";
+        return term1 / term2;
+    }
+
     public static void Subtract(){
 
         int x, y, z;
@@ -49,7 +69,6 @@ public class Operations {
         System.out.println("Now enter the denominator; ");
         y = in.nextInt();
         z = x / y;
-        //System.out.println("Multiplied integers = " + z);
         System.out.println(x + " divided by " + y + " = " + z);
 
     }
